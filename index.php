@@ -74,38 +74,50 @@ $faq_list = [
             top: 0;
             right: 0;
             width: 100%;
+            height: 100px;
             background-color: white;
             z-index: 1;
+        }
+
+        img {
+            height: 70px;
         }
 
         ul {
             width: 50%;
         }
+        li{
+            margin-right: 30px;
+        }
 
         a {
             text-decoration: none;
-            color: black;
+        }
+
+        .active {
+            color: blue;
         }
     </style>
 </head>
 
 <body>
-    <header class="p-4 border-bottom">
-        <a href="#">Logo</a> <span>Privacy e termini</span>
+    <header class="border-bottom container-fluid">
+        <a href="#"><img src="https://www.pngall.com/wp-content/uploads/5/Google-Logo-PNG-Free-Image.png" alt="logo"></a> 
+        <span class="fs-4"><u>Privacy e termini</u> </span>
         <nav>
-            <ul class="nav pt-4 d-flex justify-content-between ">
-                <li><a href="#">Introduzione</a></li>
-                <li><a href="#">Norme sulla privacy</a></li>
-                <li><a href="#">Termini di utilizo</a></li>
-                <li><a href="#">Tecnologie</a></li>
-                <li><a href="#">Domande frequenti</a></li>
+            <ul class="nav mx-3">
+                <li><a class="text-dark" href="#">Introduzione</a></li>
+                <li><a class="text-dark" href="#">Norme sulla privacy</a></li>
+                <li><a class="text-dark" href="#">Termini di utilizzo</a></li>
+                <li><a class="text-dark" href="#">Tecnologie</a></li>
+                <li><a class="text-dark active" href="#">Domande frequenti</a></li>
             </ul>
         </nav>
     </header>
 
     <div class="container">
         <?php foreach ($faq_list as $faq) { ?>
-            <h2 class="py-4"><?php echo $faq['request'] ?></h2>
+            <h2 class="py-3"><?php echo $faq['request'] ?></h2>
             <p><?php echo $faq['answer'] ?></p>
         <?php } ?>
     </div>
