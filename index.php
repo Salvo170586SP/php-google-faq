@@ -112,8 +112,8 @@ $faq_list = [
 
 <body>
     <header class="border-bottom container-fluid">
-        <a href="#"><img src="https://www.pngall.com/wp-content/uploads/5/Google-Logo-PNG-Free-Image.png" alt="logo"></a> 
-        <span class="fs-4"><u>Privacy e termini</u> </span>
+        <a href="#"><img class="align-middle" src="https://www.pngall.com/wp-content/uploads/5/Google-Logo-PNG-Free-Image.png" alt="logo"></a> 
+        <span class="fs-4 align-middle">Privacy e termini</span>
         <nav>
             <ul class="nav mx-3">
                 <li><a  href="#">Introduzione</a></li>
