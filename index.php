@@ -79,6 +79,7 @@ $faq_list = [
             z-index: 1;
         }
 
+
         img {
             height: 70px;
         }
@@ -97,6 +98,10 @@ $faq_list = [
         .active {
             color: blue;
         }
+
+        main{
+            margin-top: 150px;
+        }
     </style>
 </head>
 
@@ -114,13 +119,14 @@ $faq_list = [
             </ul>
         </nav>
     </header>
-
-    <div class="container">
-        <?php foreach ($faq_list as $faq) { ?>
-            <h2 class="py-3"><?php echo $faq['request'] ?></h2>
-            <p><?php echo $faq['answer'] ?></p>
-        <?php } ?>
-    </div>
+        <main>
+            <div class="container">
+                <?php foreach ($faq_list as $faq) { ?>
+                    <h2 class="py-3"><?php echo $faq['request'] ?></h2>
+                    <p><?php echo $faq['answer'] ?></p>
+                <?php } ?>
+            </div>
+        </main>
 </body>
 
 </html>
