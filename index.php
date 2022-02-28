@@ -78,7 +78,10 @@ $faq_list = [
             background-color: white;
             z-index: 1;
         }
-
+        header a{
+            color: black;
+            padding: 4px;
+        }
 
         img {
             height: 70px;
@@ -97,6 +100,8 @@ $faq_list = [
 
         .active {
             color: blue;
+            border-bottom: 3px solid blue ;
+            
         }
 
         main{
@@ -111,11 +116,11 @@ $faq_list = [
         <span class="fs-4"><u>Privacy e termini</u> </span>
         <nav>
             <ul class="nav mx-3">
-                <li><a class="text-dark" href="#">Introduzione</a></li>
-                <li><a class="text-dark" href="#">Norme sulla privacy</a></li>
-                <li><a class="text-dark" href="#">Termini di utilizzo</a></li>
-                <li><a class="text-dark" href="#">Tecnologie</a></li>
-                <li><a class="text-dark active" href="#">Domande frequenti</a></li>
+                <li><a  href="#">Introduzione</a></li>
+                <li><a  href="#">Norme sulla privacy</a></li>
+                <li><a  href="#">Termini di utilizzo</a></li>
+                <li><a  href="#">Tecnologie</a></li>
+                <li><a class="active" href="#">Domande frequenti</a></li>
             </ul>
         </nav>
     </header>
